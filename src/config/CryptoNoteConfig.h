@@ -46,27 +46,6 @@ static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED
 
 /* Premine amount */
 const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(30000000000);
-
-/* How to generate a premine:
-
-* Compile your code
-
-* Run zedwallet, ignore that it can't connect to the daemon, and generate an
-  address. Save this and the keys somewhere safe.
-
-* Launch the daemon with these arguments:
---print-genesis-tx --genesis-block-reward-address <premine wallet address>
-
-For example:
-Zentd --print-genesis-tx --genesis-block-reward-address ZeLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW
-
-* Take the hash printed, and replace it with the hash below in GENESIS_COINBASE_TX_HEX
-
-* Recompile, setup your seed nodes, and start mining
-
-* You should see your premine appear in the previously generated wallet.
-
-*/
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000180d88ee16f02f17fd6187a65a5844ec8fc5aa30e088aebb13951cbb6710c1aafd662353bbd4221013f233d1b74de62b435533d6e28c374f0f8568c5c25fd1130eceeb639133dbd19";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
@@ -279,5 +258,10 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 const char* const SEED_NODES[] = {
   "95.216.169.11:21688", // seedpro1.zent.cash
   "95.216.191.56:21688", // seedpro2.zent.cash
+  "seedpro1.zent.cash:21688", // seedpro1.zent.cash
+  "seedpro2.zent.cash:21688", // seedpro2.zent.cash
+  "seedpro3.zent.cash:21688", // seedpro3.zent.cash
+  "seedpro4.zent.cash:21688", // seedpro4.zent.cash
+  "seedpro5.zent.cash:21688", // seedpro5.zent.cash
 };
 } // CryptoNote
