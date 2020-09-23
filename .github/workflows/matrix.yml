@@ -104,14 +104,14 @@ jobs:
           cd build/src
           TARGETS="Zentd miner zentwallet zentwallet-beta cryptotest Zent-service wallet-api"
           if [[ "${LABEL}" != "aarch64" ]]; then strip ${TARGETS}; fi
-          rm -rf zent-${TAG}
-          mkdir zent-${TAG}
-          cp ${TARGETS} zent-${TAG}/
-          cp ../../LICENSE zent-${TAG}/
-          tar cvfz zent-${LABEL}-${TAG}.tar.gz zent-${TAG}/
-          echo ::set-output name=binary_path::zent-${TAG}
-          echo ::set-output name=artifact_name::zent-${LABEL}-${TAG}
-          echo ::set-output name=file_name::zent-${LABEL}-${TAG}.tar.gz
+          rm -rf ZentCash-${TAG}
+          mkdir ZentCash-${TAG}
+          cp ${TARGETS} ZentCash-${TAG}/
+          cp ../../LICENSE ZentCash-${TAG}/
+          tar cvfz ZentCash-${TAG}-${LABEL}.tar.gz ZentCash-${TAG}/
+          echo ::set-output name=binary_path::ZentCash-${TAG}
+          echo ::set-output name=artifact_name::ZentCash-${TAG}-${LABEL}
+          echo ::set-output name=file_name::ZentCash-${TAG}-${LABEL}.tar.gz
       # Upload to GH Release
       - name: Upload to GH Release
         if: github.event_name == 'release' && matrix.deployable
@@ -182,14 +182,14 @@ jobs:
           cd build/src
           TARGETS="Zentd miner zentwallet zentwallet-beta cryptotest Zent-service wallet-api"
           strip ${TARGETS}
-          rm -rf zent-${TAG}
-          mkdir zent-${TAG}
-          cp ${TARGETS} zent-${TAG}/
-          cp ../../LICENSE zent-${TAG}/
-          tar cvfz zent-${LABEL}-${TAG}.tar.gz zent-${TAG}/
-          echo ::set-output name=binary_path::zent-${TAG}
-          echo ::set-output name=artifact_name::zent-${LABEL}-${TAG}
-          echo ::set-output name=file_name::zent-${LABEL}-${TAG}.tar.gz
+          rm -rf ZentCash-${TAG}
+          mkdir ZentCash-${TAG}
+          cp ${TARGETS} ZentCash-${TAG}/
+          cp ../../LICENSE ZentCash-${TAG}/
+          tar cvfz ZentCash-${TAG}-${LABEL}.tar.gz ZentCash-${TAG}/
+          echo ::set-output name=binary_path::ZentCash-${TAG}
+          echo ::set-output name=artifact_name::ZentCash-${TAG}-${LABEL}
+          echo ::set-output name=file_name::ZentCash-${TAG}-${LABEL}.tar.gz
       # Upload to GH Release
       - name: Upload to GH Release
         if: github.event_name == 'release'
@@ -259,14 +259,14 @@ jobs:
         run: |
           if [[ "${TAG:5:4}" == "tags" ]]; then export TAG=${TAG:10}; else export TAG=${COMMIT_SHA}; fi
           cd build/src/Release
-          rm -rf zent-${TAG}
-          mkdir zent-${TAG}
-          cp *.exe zent-${TAG}/
-          cp ../../../LICENSE zent-${TAG}/
-          7z a zent-${LABEL}-${TAG}.zip zent-${TAG}/
-          echo ::set-output name=binary_path::zent-${TAG}
-          echo ::set-output name=artifact_name::zent-${LABEL}-${TAG}
-          echo ::set-output name=file_name::zent-${LABEL}-${TAG}.zip
+          rm -rf ZentCash-${TAG}
+          mkdir ZentCash-${TAG}
+          cp *.exe ZentCash-${TAG}/
+          cp ../../../LICENSE ZentCash-${TAG}/
+          7z a ZentCash-${TAG}-${LABEL}.zip ZentCash-${TAG}/
+          echo ::set-output name=binary_path::ZentCash-${TAG}
+          echo ::set-output name=artifact_name::ZentCash-${TAG}-${LABEL}
+          echo ::set-output name=file_name::ZentCash-${TAG}-${LABEL}.zip
       # Upload to GH Release
       - name: Upload to GH Release
         if: github.event_name == 'release'
