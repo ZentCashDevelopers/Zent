@@ -8,7 +8,7 @@
 ![Version](https://img.shields.io/github/v/release/ZentCashFoundation/Zent)
 
 ### Master Build Status
-[![Build Status](https://travis-ci.org/ZentCashFoundation/Zent.svg?branch=master)](https://travis-ci.org/ZentCashFoundation/Zent) [![Build status](https://ci.appveyor.com/api/projects/status/r40clll5jmnhbujc/branch/master?svg=true)](https://ci.appveyor.com/project/SuperBlockchain-Pool/zent/branch/master)
+![Build](https://github.com/ZentCashDevelopers/Zent/workflows/Build/badge.svg)
 
 ### Installing
 
