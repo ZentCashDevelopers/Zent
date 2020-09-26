@@ -147,7 +147,7 @@ You can build for 32-bit or 64-bit Windows. **If you're not sure, pick 64-bit.**
 ##### Building
 
 For 64-bit:
-- From the start menu, open 'x64 Native Tools Command Prompt for VS 2019'.
+- From the start menu, open ####'x64 Native Tools Command Prompt for VS 2019'.
 - `cd <your_zentcash_directory>`
 - `mkdir build`
 - `cd build`
@@ -155,7 +155,7 @@ For 64-bit:
 - `MSBuild ZentCash.sln /p:Configuration=Release /m`
 
 For 32-bit:
-- From the start menu, open 'x86 Native Tools Command Prompt for VS 2019'.
+- From the start menu, open ####'x86 Native Tools Command Prompt for VS 2019'.
 - `cd <your_zentcash_directory>`
 - `mkdir build`
 - `cd build`
