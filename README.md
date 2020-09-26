@@ -1,3 +1,11 @@
+![Zent Cash](https://github.com/ZentCashFoundation/brand/blob/master/logo/wordmark/zentcash_wordmark_color.png "Zent Cash")
+#### Zent Cash is a private, fast, and easy way to send money to friends and businesses.
+
+[![Discord](https://img.shields.io/discord/527428494154792960?label=Zent%20Cash%20[ZTC])](https://discord.gg/tfaUE2G) 
+[![GitHub All Releases](https://img.shields.io/github/downloads/ZentCashFoundation/Zent/total?label=Downloads)](http://latest.zent.cash) 
+[![GitHub contributors](https://img.shields.io/github/contributors-anon/ZentCashFoundation/Zent?label=Contributors)](https://github.com/ZentCashFoundation/Zent/graphs/contributors) 
+[![GitHub issues](https://img.shields.io/github/issues/ZentCashFoundation/Zent?label=Issues)](https://github.com/ZentCashFoundation/Zent/issues) 
+![Version](https://img.shields.io/github/v/release/ZentCashFoundation/Zent)
 
 #### Master Build Status
 [![Build Status](https://travis-ci.org/ZentCashFoundation/Zent.svg?branch=master)](https://travis-ci.org/ZentCashFoundation/Zent) [![Build status](https://ci.appveyor.com/api/projects/status/r40clll5jmnhbujc/branch/master?svg=true)](https://ci.appveyor.com/project/SuperBlockchain-Pool/zent/branch/master)
