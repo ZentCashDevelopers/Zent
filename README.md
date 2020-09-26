@@ -155,7 +155,7 @@ For 64-bit:
 - `MSBuild ZentCash.sln /p:Configuration=Release /m`
 
 For 32-bit:
-- From the start menu, open 'x86 Native Tools Command Prompt for vs2017'.
+- From the start menu, open 'x86 Native Tools Command Prompt for VS 2019'.
 - `cd <your_zentcash_directory>`
 - `mkdir build`
 - `cd build`
