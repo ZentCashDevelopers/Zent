@@ -1,7 +1,7 @@
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2020, The TurtleCoin Developers
-// Copyright (c) 2019-2023, The Zent Cash Developers
+// Copyright (c) 2019-2024, The Zent Cash Developers
 //
 // Please see the included LICENSE file for more information.
 
@@ -71,7 +71,7 @@ namespace CryptoNote
            to import from when the block height cannot be found in the node or the node is offline. */
         const uint64_t GENESIS_BLOCK_TIMESTAMP = 1550759396;
 
-        const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
+        const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 20;
 
         const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 100000; 
 
