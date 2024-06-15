@@ -1,4 +1,5 @@
 // cryptlib.cpp - originally written and placed in the public domain by Wei Dai
+
 #include "pch.h"
 #include "config.h"
 
@@ -14,6 +15,7 @@
 
 #ifndef CRYPTOPP_IMPORTS
 
+#include <cstddef>
 #include "cryptlib.h"
 #include "misc.h"
 #include "filters.h"
