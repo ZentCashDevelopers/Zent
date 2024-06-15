@@ -98,10 +98,10 @@ In the DLL version of Crypto++, only the following implementation class are avai
 <p>Thanks to Ryan Phillips for providing the Doxygen configuration file
 and getting us started on the manual.
 */
-
+#include <cstddef>
 #ifndef CRYPTOPP_CRYPTLIB_H
 #define CRYPTOPP_CRYPTLIB_H
-
+#include <cstddef>
 #include "config.h"
 #include "stdcpp.h"
 #include "trap.h"
