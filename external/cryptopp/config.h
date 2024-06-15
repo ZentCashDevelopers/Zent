@@ -6,6 +6,8 @@
 #ifndef CRYPTOPP_CONFIG_H
 #define CRYPTOPP_CONFIG_H
 
+#include <cstddef>
+
 // ***************** Important Settings ********************
 
 // define this if running on a big-endian CPU
