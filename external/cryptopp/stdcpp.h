@@ -2,7 +2,7 @@
 
 /// \file stdcpp.h
 /// \brief Common C++ header files
-
+#include <cstddef>
 #ifndef CRYPTOPP_STDCPP_H
 #define CRYPTOPP_STDCPP_H
 
@@ -10,7 +10,7 @@
 #define _DO_NOT_DECLARE_INTERLOCKED_INTRINSICS_IN_MEMORY
 #include <intrin.h>
 #endif
-
+#include <cstddef>
 #include <string>
 #include <memory>
 #include <exception>
