@@ -1,3 +1,4 @@
+#include <cstddef>
 // config.h - originally written and placed in the public domain by Wei Dai
 
 /// \file config.h
