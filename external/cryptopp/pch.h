@@ -12,6 +12,7 @@
 
 # else
 	#include "config.h"
+	#include <cstddef>
 
 	#ifdef USE_PRECOMPILED_HEADERS
 		#include "simple.h"
