@@ -15,7 +15,6 @@
 
 #ifndef CRYPTOPP_IMPORTS
 
-#include <cstddef>
 #include "cryptlib.h"
 #include "misc.h"
 #include "filters.h"
