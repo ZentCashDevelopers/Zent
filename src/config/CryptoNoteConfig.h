@@ -71,7 +71,7 @@ namespace CryptoNote
            to import from when the block height cannot be found in the node or the node is offline. */
         const uint64_t GENESIS_BLOCK_TIMESTAMP = 1550759396;
 
-        const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 20;
+        const size_t CRYPTONOTE_REWARD_BLOCKS_WINDOW = 100;
 
         const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE = 100000; 
 
