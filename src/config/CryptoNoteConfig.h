@@ -384,8 +384,8 @@ namespace CryptoNote
         {0xc6, 0x1c, 0x4d, 0x6c, 0xcc, 0x12, 0x42, 0x9c, 0x33, 0xd6, 0x35, 0xa5, 0xee, 0xc1, 0x43, 0xd8}};
 
     const char *const SEED_NODES[] = {
-        "superblockchain.con-ip.com:19051", 
-	"superblockchain.zapto.org:19051", 
+ 	"138.124.183.11:21688",
+ 	"185.74.222.212:21688",
 	"superblockchain.con-ip.com:21688", 
         "superblockchain.zapto.org:21688",
     };
