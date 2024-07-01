@@ -124,7 +124,7 @@ jobs:
 
       # Upload to GH Actions Artifacts
       - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ZentCash-${{ github.sha }}-${{ env.LABEL }}
           path: ./build/src/ZentCash-${{ github.sha }}
@@ -239,7 +239,7 @@ jobs:
 
       # Upload to GH Actions Artifacts
       - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ZentCash-${{ github.sha }}-${{ env.LABEL }}
           path: ./build/src/ZentCash-${{ github.sha }}       
@@ -315,7 +315,7 @@ jobs:
 
       # Upload to GH Actions Artifacts
       - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ZentCash-${{ github.sha }}-${{ env.LABEL }}
           path: ./build/src/ZentCash-${{ github.sha }}
@@ -397,7 +397,7 @@ jobs:
 
       # Upload to GH Actions Artifacts
       - name: Upload To GH Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ZentCash-${{ github.sha }}-${{ env.LABEL }}
           path: ./build/src/Release/ZentCash-${{ github.sha }}
