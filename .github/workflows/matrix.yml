@@ -56,7 +56,7 @@ jobs:
         run: |
           sudo apt install ccache
       - name: Retrieve ccache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: .ccache
           key: ccache-${{ matrix.label }}    
@@ -171,7 +171,7 @@ jobs:
         run: |
           sudo apt install ccache
       - name: Retrieve ccache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: .ccache
           key: ccache-${{ matrix.label }}     
@@ -264,7 +264,7 @@ jobs:
            brew link --overwrite llvm@14
            ln -s /usr/local/opt/llvm@14 /usr/local/opt/llvm
       - name: Retrieve ccache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: .ccache
           key: ccache-osx
@@ -333,7 +333,7 @@ jobs:
         run: pip install clcache
 
       - name: Retrieve clcache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: clcache
           key: clcache-windows
