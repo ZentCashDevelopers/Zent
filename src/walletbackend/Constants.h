@@ -38,7 +38,7 @@ namespace Constants
 
     /* Save a block hash checkpoint every BLOCK_HASH_CHECKPOINTS_INTERVAL
        blocks */
-    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 5000;
+    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 1000;
 
     /* The amount of blocks since an input has been spent that we remove it
        from the container */
