@@ -152,7 +152,7 @@ jobs:
             label: ubuntu-22.04-linux-clang-11
             deployable: true
           - build_name: 'Ubuntu 22.04 - aarch64'
-            label: aarch64
+            label: ubuntu-22.04-linux-aarch64
             deployable: false
     env:
       CCACHE_DIR: $GITHUB_WORKSPACE/.ccache
