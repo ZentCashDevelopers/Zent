@@ -218,7 +218,7 @@ jobs:
           if [[ "${TAG:5:4}" == "tags" ]]; then export TAG=${TAG:10}; else export TAG=${COMMIT_SHA}; fi
           cd build/src
           TARGETS="Zentd miner zentwallet cryptotest Zent-service wallet-api wallet-upgrader"
-          if [[ "${LABEL}" != "aarch64" ]]; then strip ${TARGETS}; fi
+          if [[ "${LABEL}" != "ubuntu-22.04-linux-aarch64" ]]; then strip ${TARGETS}; fi
           rm -rf ZentCash-${TAG}
           mkdir ZentCash-${TAG}
           cp ${TARGETS} ZentCash-${TAG}/
