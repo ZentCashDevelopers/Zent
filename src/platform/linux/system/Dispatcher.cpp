@@ -16,12 +16,9 @@
 #include <unistd.h>
 #include "ErrorMessage.h"
 
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define PTHREAD_MUTEX_INITIALIZER { 0, 0, 0, 0, 0, { 0 }}
-pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 namespace System
 {
