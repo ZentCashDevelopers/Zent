@@ -38,11 +38,11 @@ namespace Constants
 
     /* Save a block hash checkpoint every BLOCK_HASH_CHECKPOINTS_INTERVAL
        blocks */
-    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 1000;
+    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 200;
 
     /* The amount of blocks since an input has been spent that we remove it
        from the container */
-    const uint64_t PRUNE_SPENT_INPUTS_INTERVAL = CryptoNote::parameters::EXPECTED_NUMBER_OF_BLOCKS_PER_DAY * 2;
+    const uint64_t PRUNE_SPENT_INPUTS_INTERVAL = 1;
 
     /* When we get the global indexes, we pass in a range of blocks, to obscure
        which transactions we are interested in - the ones that belong to us.
@@ -58,5 +58,5 @@ namespace Constants
        then split into threads and process. Too large will result in large
        jumps in the sync height, but should offer better performance from a
        decrease in locking of data structures. */
-    const uint64_t BLOCK_PROCESSING_CHUNK = 200;
+    const uint64_t BLOCK_PROCESSING_CHUNK = 100;
 } // namespace Constants
