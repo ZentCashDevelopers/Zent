@@ -210,7 +210,7 @@ if (NOT MSVC)
     endif ()
 
     if (NOT APPLE)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -fsanitize=address")
     endif ()
 
     ## Setting up DEBUG flags
