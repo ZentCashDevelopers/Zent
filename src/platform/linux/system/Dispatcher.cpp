@@ -9,7 +9,6 @@
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <sys/timerfd.h>
-#include <sys/types.h>
 #include <fcntl.h>
 #include <string.h>
 #include <ucontext.h>
