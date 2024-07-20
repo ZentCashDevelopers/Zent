@@ -224,7 +224,7 @@ std::tuple<bool, uint64_t> getAmountToAtomic(const std::string msg, const bool c
         }
 
         /* \n == no-op */
-        if (amountString == "")
+        if (amountString.empty())
         {
             continue;
         }
@@ -240,35 +240,29 @@ std::tuple<bool, uint64_t> getAmountToAtomic(const std::string msg, const bool c
         }
 
         /* Find the position of the decimal in the string */
-        const uint64_t decimalPos = amountString.find_last_of('.');
+        const std::size_t decimalPos = amountString.find_last_of('.');
 
         /* Get the length of the decimal part */
-        const uint64_t decimalLength =
-            decimalPos == std::string::npos ? 0 : amountString.substr(decimalPos + 1, amountString.length()).length();
+        const std::size_t decimalLength = (decimalPos == std::string::npos) ? 0 : (amountString.length() - decimalPos - 1);
 
         /* Can't send amounts with more decimal places than supported */
         if (decimalLength > WalletConfig::numDecimalPlaces)
         {
-            std::stringstream stream;
-
-            stream << CryptoNote::CRYPTONOTE_NAME << " transfers can have "
-                   << "a max of " << WalletConfig::numDecimalPlaces << " decimal places.\n";
-
-            std::cout << WarningMsg(stream.str());
-
+            std::cout << WarningMsg(
+                CryptoNote::CRYPTONOTE_NAME + " transfers can have a max of " +
+                std::to_string(WalletConfig::numDecimalPlaces) + " decimal places.\n");
             continue;
         }
 
         /* Remove the decimal place, so we can parse it as an atomic amount */
         Utilities::removeCharFromString(amountString, '.');
 
-        /* Pad the string with 0's at the end, so 123 becomes 12300, so we
-           can parse it as an atomic amount. 123.45 parses as 12345. */
+        /* Pad the string with 0's at the end */
         amountString.append(WalletConfig::numDecimalPlaces - decimalLength, '0');
 
         try
         {
-            unsigned long amount = std::stoull(amountString);
+            uint64_t amount = std::stoull(amountString);
 
             if (amount < WalletConfig::minimumSend)
             {
@@ -286,8 +280,7 @@ std::tuple<bool, uint64_t> getAmountToAtomic(const std::string msg, const bool c
         }
         catch (const std::invalid_argument &)
         {
-            std::cout << WarningMsg("Failed to parse amount! Ensure you entered "
-                                    "the value correctly.\n");
+            std::cout << WarningMsg("Failed to parse amount! Ensure you entered the value correctly.\n");
         }
     }
 }
