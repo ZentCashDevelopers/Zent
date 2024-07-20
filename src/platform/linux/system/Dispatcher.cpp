@@ -2,23 +2,21 @@
 // Copyright (c) 2018-2019, The TurtleCoin Developers
 //
 // Please see the included LICENSE file for more information.
-#include "Dispatcher.h"
-#include <cassert>
 
+#include "Dispatcher.h"
+
+#include "ErrorMessage.h"
+
+#include <cassert>
+#include <fcntl.h>
 #include <stdexcept>
+#include <string.h>
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <sys/timerfd.h>
-#include <fcntl.h>
-#include <string.h>
 #include <ucontext.h>
 #include <unistd.h>
-#include "ErrorMessage.h"
-
 #include <pthread.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 namespace System
 {
