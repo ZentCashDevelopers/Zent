@@ -268,7 +268,7 @@ std::tuple<bool, uint64_t> getAmountToAtomic(const std::string msg, const bool c
 
         try
         {
-            unsigned long long amount = std::stoull(amountString);
+            unsigned long amount = std::stoull(amountString);
 
             if (amount < WalletConfig::minimumSend)
             {
