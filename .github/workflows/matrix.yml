@@ -69,7 +69,7 @@ jobs:
           CXX: ${{ matrix.cxx }}
         run: |
           mkdir build && cd build
-          cmake -DCMAKE_BUILD_TYPE=Release -DSTATIC=true ..
+          cmake -DARCH=default -DCMAKE_BUILD_TYPE=Release -DSTATIC=true ..
       # Build for linux
       - name: Build
         if: matrix.build_name != 'Ubuntu 20.04 - aarch64'
@@ -184,7 +184,7 @@ jobs:
           CXX: ${{ matrix.cxx }}
         run: |
           mkdir build && cd build
-          cmake -DCMAKE_BUILD_TYPE=Release -DSTATIC=true ..
+          cmake -DARCH=default -DCMAKE_BUILD_TYPE=Release -DSTATIC=true ..
       # Build for linux
       - name: Build
         if: matrix.build_name != 'Ubuntu 22.04 - aarch64'
