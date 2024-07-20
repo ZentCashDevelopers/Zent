@@ -249,7 +249,7 @@ std::tuple<bool, uint64_t> getAmountToAtomic(const std::string msg, const bool c
         if (decimalLength > WalletConfig::numDecimalPlaces)
         {
             std::cout << WarningMsg(
-                CryptoNote::CRYPTONOTE_NAME + " transfers can have a max of " +
+                std::string(CryptoNote::CRYPTONOTE_NAME) + " transfers can have a max of " +
                 std::to_string(WalletConfig::numDecimalPlaces) + " decimal places.\n");
             continue;
         }
