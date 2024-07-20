@@ -5,8 +5,8 @@
 
 #pragma once
 
-#include <stdint.h>
 #include <cstddef>
+#include <cstdint>
 #include <functional>
 #include <queue>
 #include <stack>
