@@ -7,6 +7,11 @@
 //////////////////////////////////////////
 
 #include <iostream>
+#include <map>
+#include <mutex>
+#include <string>
+#include <memory>
+#include <thread>
 #include <utilities/ColouredMsg.h>
 #include <utilities/Input.h>
 #include <zedwallet++/AddressBook.h>
