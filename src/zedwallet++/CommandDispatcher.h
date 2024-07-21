@@ -3,7 +3,11 @@
 // Please see the included LICENSE file for more information.
 
 #pragma once
-
+#include <map>
+#include <mutex>
+#include <string>
+#include <memory>
+#include <thread>
 #include <walletbackend/WalletBackend.h>
 #include <zedwallet++/ParseArguments.h>
 
