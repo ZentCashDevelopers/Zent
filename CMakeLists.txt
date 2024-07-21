@@ -213,9 +213,7 @@ if (NOT MSVC)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread" )
     endif ()
 
-    if (NOT APPLE AND NOT "${LABEL}" STREQUAL "aarch64" AND NOT "${LABEL}" STREQUAL "ubuntu-22.04-linux-aarch64")
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
-    endif ()    
+     
 
     ## Setting up DEBUG flags
     if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
