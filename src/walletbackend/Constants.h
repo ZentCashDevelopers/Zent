@@ -38,7 +38,7 @@ namespace Constants
 
     /* Save a block hash checkpoint every BLOCK_HASH_CHECKPOINTS_INTERVAL
        blocks */
-    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 200;
+    const uint32_t BLOCK_HASH_CHECKPOINTS_INTERVAL = 500;
 
     /* The amount of blocks since an input has been spent that we remove it
        from the container */
@@ -58,5 +58,5 @@ namespace Constants
        then split into threads and process. Too large will result in large
        jumps in the sync height, but should offer better performance from a
        decrease in locking of data structures. */
-    const uint64_t BLOCK_PROCESSING_CHUNK = 100;
+    const uint64_t BLOCK_PROCESSING_CHUNK = 500;
 } // namespace Constants
