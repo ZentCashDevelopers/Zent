@@ -489,15 +489,6 @@ bool ValidateTransaction::validateTransactionInputsExpensive()
             {
                 return false; // fail the validation immediately if cancel requested
             }
-            if (m_blockchainCache->checkIfSpent(in.keyImage, m_blockHeight))
-            {
-                setTransactionValidationResult(
-                    CryptoNote::error::TransactionValidationError::INPUT_KEYIMAGE_ALREADY_SPENT,
-                    "Transaction contains key image that has already been spent"
-                );
-
-                return false;
-            }
 
             std::vector<Crypto::PublicKey> outputKeys;
             std::vector<uint32_t> globalIndexes(in.outputIndexes.size());
