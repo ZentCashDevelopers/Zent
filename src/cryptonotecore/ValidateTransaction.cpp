@@ -221,16 +221,6 @@ bool ValidateTransaction::validateTransactionInputs()
 
                 return false;
             }
-
-            if (!m_validatorState.spentKeyImages.insert(in.keyImage).second)
-            {
-                setTransactionValidationResult(
-                    CryptoNote::error::TransactionValidationError::INPUT_KEYIMAGE_ALREADY_SPENT,
-                    "Transaction contains key image that has already been spent"
-                );
-
-                return false;
-            }
         }
         else
         {
